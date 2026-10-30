@@ -1,0 +1,21 @@
+{
+  "functions": {
+    "api/index.mjs": {
+      "maxDuration": 15
+    }
+  },
+  "rewrites": [
+    {
+      "source": "/api/ticket",
+      "destination": "/api/index?operation=ticket"
+    },
+    {
+      "source": "/api/feedback",
+      "destination": "/api/index?operation=feedback"
+    },
+    {
+      "source": "/api/version",
+      "destination": "/api/index?operation=version"
+    }
+  ]
+}
